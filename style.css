@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:monospace;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(221, 52, 52);
+    
+}
+.socials{
+    margin-top: 2rem;
+    position: fixed;
+    right : 2rem;
+    /* top : 2rem; */
+}
+.socials a{
+    margin: 0.5rem;
+}
+.socials svg {
+    fill: black;
+  }
+.win{
+    display: none;
+}
+.winner{
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 200px;
+}
+.NewGame{
+    text-align: center;
+    font-size: 3rem;
+}
+#new{
+    margin-bottom: 500px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+.restart{
+    cursor: pointer;
+    margin-bottom: 500px;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+.tic{
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 5rem;
+}
+.gamebox{
+    display: flex;
+    justify-content: center;
+}
+.game {
+    height: 50vh; 
+    width: 50vw; 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    height: 16.666vh; 
+    width: 16.666vw; 
+    background: none;
+    border: none;
+}
+
+#reset-div{
+    margin-top: 40px;
+}
+.b{
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+}
+#b5{
+    border: 5px solid black;
+}
+#b7{
+    border-right: 5px solid black;
+    border-left: 5px solid black;
+}
+#b2{
+    border-right: 5px solid black;
+    border-left: 5px solid black;
+}
+.box{
+    font-size: 7rem;
+}
+@media only screen and (max-width: 768px) {
+    /* Adjust styles for screens smaller than 768px */
+    .game {
+        margin-top: 5rem;
+        height: 30vh;
+        width: 70vw;
+    }
+
+    .box {
+        height: 22vw;
+        width: 22vw;
+        font-size: 4rem;
+    }
+
+    .winner {
+        font-size: 3rem;
+    }
+    .socials{
+        position: fixed;
+        right : 2rem;
+        bottom : 2rem;
+    }
+}
